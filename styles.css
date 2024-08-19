@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 10px 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.movie-list-container {
+    min-height: 100vh;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.movie-row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0 0 0;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 400px;
+    max-height: 400px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: -4px 6px 17px 0px rgba(173, 168, 173, 1);
+}
+
+.movie-poster {
+    width: 100%;
+    min-height: 350px;
+    max-height: 350px;
+    border-radius: 20px;
+}
+
+.movie-title {
+    text-align: center;
+    font-weight: 600;
+    padding: 6px 0 5px 0;
+    max-height: fit-content;
+    overflow: hidden;
+}
+
+.movie-released-info {
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 0;
+}
