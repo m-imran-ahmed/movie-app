@@ -22,4 +22,43 @@ async function getMovieList() {
 	}
 }
 
+const yearDropdown = document.getElementById('years');
+
+function getYears(startYear) {
+	const years = [];
+	const currentYear = new Date().getFullYear();
+
+	startYear = startYear || 1980;
+	while (startYear <= currentYear) {
+		years.push(startYear++);
+	}
+
+	years.forEach((year) => {
+		var option = document.createElement('option');
+		option.value = year;
+		option.innerHTML = year;
+		yearDropdown.appendChild(option);
+	});
+}
+
+const movieGenres = [
+	'Action',
+	'Animation',
+	'Comedy',
+	'Crime',
+	'Drama',
+	'Experimental',
+	'Fantasy',
+	'Historical',
+	'Horror',
+	'Romance',
+	'Science',
+	'Fiction',
+	'Thriller',
+	'Western',
+	'Musical',
+	'War',
+];
+
 getMovieList();
+getYears();
